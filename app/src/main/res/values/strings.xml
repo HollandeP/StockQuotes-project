@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">Stock Quotes</string>
     <string name="stockInputString">Enter Stock Symbol:</string>
+    <string name="submit">Submit</string>
+    <string name="stockSymbol">Symbol:</string>
+    <string name="compName">Name:</string>
+    <string name="lastTradePrice">Last Trade Price:</string>
+    <string name="lastTradeTime">Last Trade Time:</string>
+    <string name="change">Change:</string>
+    <string name="range">52 Week Range:</string>
+    <string name="blank"></string>
 </resources>

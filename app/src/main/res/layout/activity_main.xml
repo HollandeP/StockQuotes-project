@@ -8,7 +8,7 @@
 
     <EditText
         android:id="@+id/stockInput"
-        android:layout_width="89dp"
+        android:layout_width="93dp"
         android:layout_height="49dp"
         android:ems="10"
         android:inputType="text"
@@ -17,13 +17,13 @@
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.841"
+        app:layout_constraintHorizontal_bias="0.858"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.095" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/stockInputString"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/stockInputString"
@@ -33,5 +33,154 @@
         app:layout_constraintHorizontal_bias="0.206"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.109" />
+        app:layout_constraintVertical_bias="0.104" />
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="322dp"
+        android:layout_height="45dp"
+        android:text="@string/submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.179" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="205dp"
+        android:layout_height="287dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/stockSymbolText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingRight="5dp"
+            android:text="@string/stockSymbol"
+            android:textAlignment="textEnd"
+            android:textAllCaps="false"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/compNameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingRight="5dp"
+            android:text="@string/compName"
+            android:textAlignment="textEnd"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/lastTradePriceText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingRight="5dp"
+            android:text="@string/lastTradePrice"
+            android:textAlignment="textEnd"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/lastTradeTimeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingRight="5dp"
+            android:text="@string/lastTradeTime"
+            android:textAlignment="textEnd"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/changeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingRight="5dp"
+            android:text="@string/change"
+            android:textAlignment="textEnd"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/rangeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingRight="5dp"
+            android:text="@string/range"
+            android:textAlignment="textEnd"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="205dp"
+        android:layout_height="287dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/stockSymbol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:text="@string/blank"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/compName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:text="@string/blank"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/lastTradePrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:text="@string/blank"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/lastTradeTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:text="@string/blank"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/change"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:text="@string/blank"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/range"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:text="@string/blank"
+            android:textSize="24sp" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
