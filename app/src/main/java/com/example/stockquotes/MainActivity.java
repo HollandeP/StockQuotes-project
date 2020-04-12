@@ -8,8 +8,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import java.io.IOException;
 
 import edu.cofc.stock.Stock;
+
+import static android.widget.Toast.makeText;
 
 public class MainActivity extends AppCompatActivity {
 Stock stock;
@@ -20,6 +25,8 @@ TextView lastTradePrice;
 TextView lastTradeTime;
 TextView change;
 TextView range;
+boolean retrievalFailed = false;
+Toast toast;
 
 
 
@@ -34,6 +41,9 @@ TextView range;
         lastTradeTime = findViewById(R.id.lastTradeTime);
         change = findViewById(R.id.change);
         range = findViewById(R.id.range);
+
+
+        toast = makeText(getApplicationContext(), "Invalid Stock Symbol", Toast.LENGTH_SHORT);
 
         Button submitBtn = findViewById(R.id.submitBtn);
 
@@ -58,8 +68,11 @@ TextView range;
             try {
                 stock.load();
             }
+            catch (IOException ioe){
+                retrievalFailed = true;
+            }
             catch (Exception ex){
-                System.out.println("Error occured");
+                System.out.println("Error occurred");
                 System.out.println(ex.getClass());
             }
             return stock;
@@ -74,7 +87,10 @@ TextView range;
             lastTradeTime.setText(stock.getLastTradeTime());
             change.setText(stock.getChange());
             range.setText(stock.getRange());
-
+            if (retrievalFailed){
+                toast.show();
+                retrievalFailed = false;
+            }
         }
     }
 }
