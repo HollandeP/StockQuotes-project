@@ -1,5 +1,6 @@
 <resources>
-    <string name="app_name">Stock Quotes</string>
+    <string name="app_name">Stock Quote Finder-inator</string>
+    <string name="stockInputHint">Ex: GOOG</string>
     <string name="stockInputString">Enter Stock Symbol:</string>
     <string name="submit">Submit</string>
     <string name="stockSymbol">Symbol:</string>
