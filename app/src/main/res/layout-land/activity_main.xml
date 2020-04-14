@@ -8,15 +8,16 @@
 
     <Button
         android:id="@+id/submitBtn"
-        android:layout_width="322dp"
-        android:layout_height="45dp"
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
         android:text="@string/submit"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.859"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.134" />
+        app:layout_constraintVertical_bias="0.226" />
 
     <TextView
         android:id="@+id/stockInputString"
@@ -26,10 +27,10 @@
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.206"
+        app:layout_constraintHorizontal_bias="0.767"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.059" />
+        app:layout_constraintVertical_bias="0.078" />
 
     <EditText
         android:id="@+id/stockInput"
@@ -43,28 +44,29 @@
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.044" />
+        app:layout_constraintVertical_bias="0.050000012" />
 
     <LinearLayout
         android:id="@+id/stockOutputStrings"
-        android:layout_width="205dp"
-        android:layout_height="300dp"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.394">
+        app:layout_constraintVertical_bias="0.496">
 
         <TextView
             android:id="@+id/stockSymbolText"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:paddingTop="5dp"
+            android:paddingTop="3dp"
             android:paddingRight="5dp"
-            android:paddingBottom="5dp"
+            android:paddingBottom="3dp"
             android:text="@string/stockSymbol"
             android:textAlignment="textEnd"
             android:textAllCaps="false"
@@ -74,9 +76,9 @@
             android:id="@+id/compNameText"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:paddingTop="5dp"
+            android:paddingTop="3dp"
             android:paddingRight="5dp"
-            android:paddingBottom="5dp"
+            android:paddingBottom="3dp"
             android:text="@string/compName"
             android:textAlignment="textEnd"
             android:textSize="24sp" />
@@ -85,9 +87,9 @@
             android:id="@+id/lastTradePriceText"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:paddingTop="5dp"
+            android:paddingTop="3dp"
             android:paddingRight="5dp"
-            android:paddingBottom="5dp"
+            android:paddingBottom="3dp"
             android:text="@string/lastTradePrice"
             android:textAlignment="textEnd"
             android:textSize="24sp" />
@@ -96,9 +98,9 @@
             android:id="@+id/lastTradeTimeText"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:paddingTop="5dp"
+            android:paddingTop="3dp"
             android:paddingRight="5dp"
-            android:paddingBottom="5dp"
+            android:paddingBottom="3dp"
             android:text="@string/lastTradeTime"
             android:textAlignment="textEnd"
             android:textSize="24sp" />
@@ -107,9 +109,9 @@
             android:id="@+id/changeText"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:paddingTop="5dp"
+            android:paddingTop="3dp"
             android:paddingRight="5dp"
-            android:paddingBottom="5dp"
+            android:paddingBottom="3dp"
             android:text="@string/change"
             android:textAlignment="textEnd"
             android:textSize="24sp" />
@@ -118,9 +120,9 @@
             android:id="@+id/rangeText"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:paddingTop="5dp"
+            android:paddingTop="3dp"
             android:paddingRight="5dp"
-            android:paddingBottom="5dp"
+            android:paddingBottom="3dp"
             android:text="@string/range"
             android:textAlignment="textEnd"
             android:textSize="24sp" />
@@ -130,14 +132,14 @@
     <LinearLayout
         android:id="@+id/stockOutputs"
         android:layout_width="205dp"
-        android:layout_height="300dp"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/stockOutputStrings"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.394">
+        app:layout_constraintVertical_bias="0.496">
 
         <TextView
             android:id="@+id/stockSymbol"
@@ -145,9 +147,9 @@
             android:layout_height="50dp"
             android:paddingStart="0dp"
             android:paddingLeft="5dp"
-            android:paddingTop="5dp"
+            android:paddingTop="3dp"
             android:paddingRight="0dp"
-            android:paddingBottom="5dp"
+            android:paddingBottom="3dp"
             android:text="@string/blank"
             android:textSize="24sp" />
 
@@ -157,9 +159,9 @@
             android:layout_height="50dp"
             android:paddingStart="0dp"
             android:paddingLeft="5dp"
-            android:paddingTop="5dp"
+            android:paddingTop="3dp"
             android:paddingRight="0dp"
-            android:paddingBottom="5dp"
+            android:paddingBottom="3dp"
             android:text="@string/blank"
             android:textSize="24sp"
             app:autoSizeMaxTextSize="24sp"
@@ -172,9 +174,9 @@
             android:layout_height="50dp"
             android:paddingStart="0dp"
             android:paddingLeft="5dp"
-            android:paddingTop="5dp"
+            android:paddingTop="3dp"
             android:paddingRight="0dp"
-            android:paddingBottom="5dp"
+            android:paddingBottom="3dp"
             android:text="@string/blank"
             android:textSize="24sp" />
 
@@ -184,9 +186,9 @@
             android:layout_height="50dp"
             android:paddingStart="0dp"
             android:paddingLeft="5dp"
-            android:paddingTop="5dp"
+            android:paddingTop="3dp"
             android:paddingRight="0dp"
-            android:paddingBottom="5dp"
+            android:paddingBottom="3dp"
             android:text="@string/blank"
             android:textSize="24sp" />
 
@@ -196,9 +198,9 @@
             android:layout_height="50dp"
             android:paddingStart="0dp"
             android:paddingLeft="5dp"
-            android:paddingTop="5dp"
+            android:paddingTop="3dp"
             android:paddingRight="0dp"
-            android:paddingBottom="5dp"
+            android:paddingBottom="3dp"
             android:text="@string/blank"
             android:textSize="24sp" />
 
@@ -208,71 +210,69 @@
             android:layout_height="50dp"
             android:paddingStart="0dp"
             android:paddingLeft="5dp"
-            android:paddingTop="5dp"
+            android:paddingTop="3dp"
             android:paddingRight="0dp"
-            android:paddingBottom="5dp"
+            android:paddingBottom="3dp"
             android:text="@string/blank"
             android:textSize="24sp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="409dp"
-        android:layout_height="95dp"
-        android:layout_marginTop="559dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="77dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <Button
-            android:id="@+id/history1"
-            android:layout_width="127dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:text="Button"
-            android:visibility="visible" />
-
-        <Button
-            android:id="@+id/history2"
-            android:layout_width="127dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:text="Button"
-            android:visibility="visible" />
-
-        <Button
-            android:id="@+id/history3"
-            android:layout_width="127dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="10dp"
-            android:text="Button"
-            android:visibility="visible" />
     </LinearLayout>
 
     <TextView
         android:id="@+id/historyText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="111dp"
-        android:layout_marginTop="512dp"
-        android:layout_marginEnd="112dp"
-        android:layout_marginBottom="189dp"
+        android:layout_marginTop="24dp"
         android:text="@string/historyText"
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.874"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.369" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.856"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.82">
+
+        <Button
+            android:id="@+id/history1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Button"
+            android:textSize="18sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/history2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Button"
+            android:textSize="18sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/history3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Button"
+            android:textSize="18sp"
+            android:visibility="visible" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
